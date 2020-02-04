@@ -19,6 +19,8 @@ Steps:
 3a)- Yes- Create Perodic work req
 3b)- No- Create One time work req
 4-Scehdule to work manager
+
+
 Why WorkManager?- 
 
 Before this we have firebase job dispatcher/Alarm mamager/Job scheduler but the issue were:
@@ -42,6 +44,8 @@ Guarantees task execution, even if the app or device restarts
 
 
 WorkManager Features:
+
+
 i)- Fully backward compatibility .so you dont need to check the Android version.
 ii)-Runs with or without Google play services.
 iii)-Task can be chanied as well ie one task is finished it can start another.
@@ -56,6 +60,7 @@ WorkInfo- This class contains information about the works. The LiveData holds th
 the work info.
 
 Constraints:
+
 
 A worker’s constraints specifies the requirements that need to be met before be executed. 
 These constraints can be related to network, battery or storage:
