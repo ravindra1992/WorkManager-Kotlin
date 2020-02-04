@@ -4,6 +4,21 @@ Work Manager -Kotlin
 WorkManager is a task scheduler used to perform backgroudn async operation with a guarantee to be executed. 
 Its is a part of Android JetPack.
 
+Gradle Dependency:
+
+ext {
+    work_manager_version = '1.0.0'
+}
+
+implementation "android.arch.work:work-runtime-ktx:$work_manager_version"
+
+Steps:
+1-Create Worker
+2-Set Constraints
+3-Check , is it periodic?
+3a)- Yes- Create Perodic work req
+3b)- No- Create One time work req
+4-Scehdule to work manager
 Why WorkManager?- 
 
 Before this we have firebase job dispatcher/Alarm mamager/Job scheduler but the issue were:
@@ -62,28 +77,4 @@ requiresStorageNotLow()
 
 
 
-
-
-
-Gradle Dependency:
-
-ext {
-    work_manager_version = '1.0.0'
-}
-
-implementation "android.arch.work:work-runtime-ktx:$work_manager_version"
-
-
-
-
-
-
-
-Steps:
-1-Create Worker
-2-Set Constraints
-3-Check , is it periodic?
-3a)- Yes- Create Perodic work req
-3b)- No- Create One time work req
-4-Scehdule to work manager
 
